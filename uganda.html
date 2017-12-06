@@ -11,177 +11,55 @@
 <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/uganda.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/animate.css">
+ <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+ <script src="js/uganda.js" type="text/javascript"></script>
 
-<header class="main-header box-shadow--4dp">
-<nav class="navbar navbar-default navbar-static-top">
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand " href="/"><img src="/icon.jpg" alt="housing.com" height="100%" /></a>
-</div>
-<div id="navbar" class="navbar-collapse collapse">
-<ul class="nav navbar-nav frontend navbar-right currency-local">
-<li id="menubar-home" class="main-menu-item"><a href="index.html">Home</a></li>
-<li class="dropdown main-menu-item">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">For Sale <span class="caret"></span></a>
-<ul class="dropdown-menu multi-level">
-<li class="main-menu-item"><a href="/plots-land-for-sale">Land</a></li>
-<li class="main-menu-item"><a href="/houses-for-sale">Houses</a></li>
-<li class="main-menu-item"><a href="/flats-apartments-for-sale">Flats & Apartments</a></li>
-<li class="main-menu-item"><a href="/commercial-property-for-sale">Commercial Properties</a></li>
-</ul>
-</li>
-<li class="dropdown main-menu-item">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">To Rent <span class="caret"></span></a>
-<ul class="dropdown-menu multi-level">
-<li class="main-menu-item"><a href="/houses-for-rent">Houses</a></li>
-<li class="main-menu-item"><a href="/flats-apartments-for-rent">Flats & Apartments</a></li>
-<li class="main-menu-item"><a href="/commercial-property-for-rent">Commercial Properties</a></li>
-<li class="main-menu-item"><a href="/bedsitters-for-rent">Bedsitters</a></li>
-</ul>
-</li>
-<li class="main-menu-item"><a href="/development-projects">New Projects</a></li>
-<li class="main-menu-item"><a href="/myproperties/selectcategory">List Your Property</a></li>
-<li class="main-menu-item"><a href="/news">News</a></li>
-<li id="menubar-myaccount" class="dropdown main-menu-item">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
-<ul class="dropdown-menu multi-level">
-<li class="class main-menu-item"><a href="/account/login?returnurl=%2fhouses-for-rent%3fgclid%3dEAIaIQobChMI4__lwqzz1wIVszLTCh18OwLUEAEYASAAEgIMovD_BwE">Sign In</a></li>
-<li id="menubar-alerts" class="main-menu-item"><a href="/emailalert">Email Alerts (0)</a></li>
-<li id="menubar-favourites" class="main-menu-item"><a href="/favourite">Favourites (0)</a></li>
-<li id="menubar-myproperties" class="main-menu-item"><a href="/myproperties">My Properties</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-</header>
-<script type="text/javascript">
-        var defaultCurrencyId = 44;
+ <div class="navbar">
+   <a href="index.html">Home</a>
+   <a href="#news">News</a>
+   <a href="about.html">About</a>
+   <a href="register.html">sign up/login</a>
+   <div class="dropdown">
+     <button class="dropbtn">options
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+       <div class="header">
+         <h2>Mega Menu</h2>
+       </div>
+       <div class="row">
+         <div class="column">
+           <h3>For sale</h3>
+           <a href="#">Link 1</a>
+           <a href="#">Link 2</a>
+           <a href="#">Link 3</a>
+         </div>
+         <div class="column">
+           <h3>To rent</h3>
+           <a href="#">Mombasa</a>
+           <a href="#">Nairobi</a>
+           <a href="#">Kisumu</a>
+         </div>
+         <div class="column">
+           <h3>new projects</h3>
+           <a href="#">Mombasa</a>
+           <a href="#">Nairobi</a>
+           <a href="#">Kisumu</a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 
-        var Converter = {
-            SetCurrency: function (currencyId) {
-                if (defaultCurrencyId == currencyId) {
-                    if (Softwarehouse.Cookie("currencyId") == "")
-                        return;
-                    Softwarehouse.DeleteCookie("currencyId");
-                } else {
-                    if (Softwarehouse.Cookie("currencyId") == currencyId)
-                        return;
-                    Softwarehouse.Cookie("currencyId", currencyId);
-                }
-                location.reload();
-            },
-            CurrenciesVisible: false
-        };
-</script>
+    <div class="container">
+    <img src="images/uga.jpg" alt="villa" style="width:100%;">
+    <div class="content">
+      <h1>Housing</h1>
+      <p>A trusted place to find a home</p>
+    </div>
+  </div>
 
-<div class="component filters">
-<div class="filters-container" style="background-color: #eee;">
-<form id="frmSearch" class="filter-form clearfix container" action="/search">
-<div class="visible-xs clearfix xs-filters-container">
-<div class="col-xs-6">
-<button type="button" class="btn btn-primary btn-block xs-filters-btn">Filters</button>
-</div>
-<div class="col-xs-6">
-<button type="button" class="btn btn-warning btn-block" onclick="SaveBuyerProfile(false, '/')">Save Search</button>
-</div>
-</div>
-<div class="top-filters hidden-xs">
-<div class="filter-type option-filter form-group  col-md-2">
-<select class="form-control mandateType" data-placeholder="Type" id="type_id" name="type_id" style="width:100%"><option value="1">For Sale</option>
-<option selected="selected" value="2">For Rent</option>
-</select>
-</div>
-<div class="filter-search form-group  col-md-10">
-<select class="form-control search-select" multiple="multiple" size=1 style="width: 100%;">
-</select>
-<input type="hidden" name="searchstyle" value="1" />
-</div>
-<div class="hidden selected-provinces">
-</div>
-<div class="hidden selected-towns">
-</div>
-<div class="hidden selected-suburbs">
-</div>
- <div class="filter-category option-filter form-group col-md-3 col-sm-6">
-<select class="multiple-select" data-placeholder="Category" id="category" multiple="multiple" name="category"><option selected="selected" value="3">Houses (6110)</option>
-<option value="1">Flats &amp; Apartments (4113)</option>
-<option value="12">Land (3616)</option>
-<option value="8">Residential Land (3329)</option>
-<option value="4">Townhouses (2129)</option>
-<option value="13">Commercial Properties (959)</option>
-<option value="9">Offices (671)</option>
-<option value="10">Warehouses (221)</option>
-<option value="6">Commercial Land (128)</option>
-<option value="38">Bungalows (64)</option>
-<option value="7">Agricultural Land (41)</option>
-<option value="2">Bedsitters (26)</option>
-<option value="5">Rooms (6)</option>
-<option value="37">Shops (3)</option>
-<option value="36">Studios (2)</option>
-</select>
-</div>
-
-<div class="filter-search-btn form-group col-md-2 col-sm-6">
-<button type="submit" class="btn btn-primary btn-block search-btn">
-<span class="glyphicon glyphicon-search"></span> <strong>Search</strong>
-</button>
-</div>
-</div>
-<div class="more-options clearfix hidden">
-<div class="filter-filter-features option-filter form-group  col-md-3">
-<div class="input-group">
-<div class="checkbox important-feature-checkbox">
-<input type="checkbox" name="filter_amenities" id="filter_amenities_0" value="9">
-<label class="toggle-label" for="filter_amenities_0">
-Furnished
-</label>
-</div>
-<div class="checkbox important-feature-checkbox">
-<input type="checkbox" name="filter_amenities" id="filter_amenities_1" value="100">
-<label class="toggle-label" for="filter_amenities_1">
-Serviced
-</label>
-</div>
-</div>
-</div>
-<div class="filter-beds spinner-filter form-group col-md-3">
-<input type="number" class="form-control" name="minbeds" value="" placeholder="Min. Bedrooms" />
-</div>
-<div class="filter-bathrooms spinner-filter form-group col-md-3">
-<input type="number" class="form-control" name="bathrooms" value="" placeholder="Min. Bathrooms" />
-</div>
-<div class="filter-reference form-group col-md-3">
-<input type="text" class="form-control" name="propertyref_box" autocomplete="off" placeholder="Reference" />
-</div>
-<div class="filter-keywords form-group col-md-3">
-<input type="text" class="form-control" name="keywords" placeholder="Keywords" />
-</div>
-<div class="filter-size form-group col-md-3 clearfix">
-<div class="input-group">
-<span class="input-group-btn">
-<select class="sizeType" name="sizetype" style="width:100%;">
-<option value="land">Land</option>
-<option value="building">Buildings</option>
-<option value="office">Office</option>
-<option value="warehouse">Warehouse</option>
-<option value="shop">Shop</option>
-</select>
-</span>
-<input type="text" class="form-control input-mask" id="size" name="size" value="" placeholder="Size" data-number-delimiter="," />
-<span class="input-group-addon">m²</span>
-</div>
-</div>
-<div class="filter-garages spinner-filter form-group col-md-2">
-<input type="number" class="form-control" name="garages" value="" placeholder="Garages" />
-</div>
-<div class="filter-staff-quarters spinner-filter form-group col-md-3">
-<input type="text" class="form-control" name="staff" value="" placeholder="Staff Quarters" />
-</div>
+ <form>
+   <input type="text" name="search" placeholder="Search..">
+ </form>
