@@ -18,12 +18,12 @@ body {
 }
 .mast {
     width: 100%;
-    background-color: #00a857;
     text-align: center;
     padding: 10px 0;
 }
 .logo {
     width: 100px;
+    float: left;
 }
 h1 {
     font-family: "Montserrat", "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
