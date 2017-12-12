@@ -181,6 +181,7 @@ hr {
   text-decoration: none;
 }
 .cities:hover {
-  font-family: monospace;
+  font-family: arial;
   text-decoration: none;
+  font-weight: bold;
 }
