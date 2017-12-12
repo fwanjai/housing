@@ -7,9 +7,8 @@ function checkScroll() {
     $('.navbar').removeClass("scrolled");
     }
   }
-  if ($(.navbar).length > 0) {
+  if ($('.navbar').length > 0) {
     $(window).on("scroll load resize", function(){
       checkScroll();
     });
   }
-  

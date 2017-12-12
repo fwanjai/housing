@@ -22,12 +22,12 @@ hr {
   position: fixed;
   z-index: 2;
   width: 100%;
-  background-color: white;
+  font-weight: bolder;
 
 }
 .navbar.scrolled {
-  background: rgb(68, 68, 68);
-  background: rgba(0, 0, 0, 0.78);
+  background: white;
+
 }
 .navbar-toggle .icon-bar {
   background-color: blue;
@@ -75,9 +75,10 @@ input[type=text]:focus {
 
 /* Style the links inside the sidenav */
 #mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
+    position: fixed; /* Position them relative to the browser window */
     left: -80px; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
+    margin-top: 15%;
     padding: 15px; /* 15px padding */
     width: 100px; /* Set a specific width */
     text-decoration: none; /* Remove underline */
@@ -144,6 +145,7 @@ input[type=text]:focus {
 }
 .container-custom:hover .overlay {
   opacity: 1;
+  border-radius: 2px;
 }
 .text {
   color: white;
