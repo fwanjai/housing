@@ -13,6 +13,12 @@ body {
     right: 0;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
 }
+<<<<<<< HEAD
+=======
+body {
+  background-color: black;
+}
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
 .main {
     text-align: center;
 }
@@ -68,3 +74,9 @@ h1 {
         display: block;
     }
 }
+<<<<<<< HEAD
+=======
+body {
+    color: grey;
+}
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
