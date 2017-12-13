@@ -24,6 +24,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+<<<<<<< HEAD
 
 // Accordion
 function myAccFunc() {
@@ -49,3 +50,38 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
+=======
+function checkScroll() {
+  var startY = $('.navbar').height() * 2; //THe point where the nav-bar changes in pixel
+
+  if ($(window).scrollTop() > startY){
+    $('.navbar').addClass("scrolled");
+  }else {
+    $('.navbar').removeClass("scrolled");
+    }
+  }
+  if ($('.navbar').length > 0) {
+    $(window).on("scroll load resize", function(){
+      checkScroll();
+    });
+  }
+
+  function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531

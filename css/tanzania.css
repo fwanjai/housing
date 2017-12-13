@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Remove the navbar's default rounded borders and increase the bottom margin */
 .navbar {
   margin-bottom: 50px;
@@ -7,13 +8,200 @@
 /* Remove the jumbotron's default bottom margin */
  .jumbotron {
   margin-bottom: 0;
+=======
+/* Remove the navbar's default margin-bottom and rounded borders */
+body {
+  background-color: white;
+}
+.panel-body{
+  padding: 0px;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #337ab7;
+}
+
+.navbar {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  margin-bottom: 0;
+  border-radius: 0;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  font-weight: bolder;
+
+}
+.navbar.scrolled {
+  background: white;
+
+}
+.navbar-toggle .icon-bar {
+  background-color: blue;
+  z-index: 2;
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
 }
 
 /* Add a gray background color and some padding to the footer */
 footer {
+<<<<<<< HEAD
   background-color: #f2f2f2;
   padding: 25px;
 }
 
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+=======
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+.carousel-caption {
+  display: none;
+}
+}
+
+.container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    margin-top: 15%;
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    float: left;
+    z-index: 2;
+}
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#blog {
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+}
+
+#projects {
+    top: 140px;
+    background-color: #f44336; /* Red */
+}
+
+#contact {
+    top: 200px;
+    background-color: #555 /* Light Black */
+}
+.breadcrumbs {
+  font-size: 13px;
+  font-family: serif;
+}
+.navbar-brand {
+  padding: 15px 30px;
+}
+.nav > li > a {
+  padding: 15px 30px;
+}
+/*.content-center {
+  position: absolute;
+  top:45%;
+  left: 35%;
+  background-color: white; opacity: 0.9;
+  padding: 10px 50px 10px 50px;
+  border-radius: 3px;
+
+}*/
+.overlay {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008cba;
+}
+.container-custom:hover .overlay {
+  opacity: 1;
+  border-radius: 2px;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.image-resizing {
+    width: 100%;
+    height: 100%;
+}
+#hover-effect {
+  height: 100%;
+}
+.before-footer {
+  background-color: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+hr {
+  margin-bottom: 0px;
+}
+.special {
+  margin-top: 0px;
+
+}
+.cities {
+  font-family: fantasy;
+  text-decoration: none;
+}
+.cities:hover {
+  font-family: monospace;
+  text-decoration: none;
+}
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
