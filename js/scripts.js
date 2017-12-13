@@ -7,6 +7,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+<<<<<<< HEAD
+=======
 
 function checkScroll() {
   var startY = $('.navbar').height() * 2; //THe point where the nav-bar changes in pixel
@@ -22,3 +24,4 @@ function checkScroll() {
       checkScroll();
     });
   }
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
