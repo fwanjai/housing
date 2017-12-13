@@ -24,6 +24,33 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+<<<<<<< HEAD
+
+// Accordion
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+=======
 function checkScroll() {
   var startY = $('.navbar').height() * 2; //THe point where the nav-bar changes in pixel
 
@@ -57,3 +84,4 @@ function checkScroll() {
           }
       }
   }
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531

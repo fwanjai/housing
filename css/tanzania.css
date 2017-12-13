@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+
+/* Remove the jumbotron's default bottom margin */
+ .jumbotron {
+  margin-bottom: 0;
+=======
 /* Remove the navbar's default margin-bottom and rounded borders */
 body {
   background-color: white;
@@ -32,10 +43,19 @@ hr {
 .navbar-toggle .icon-bar {
   background-color: blue;
   z-index: 2;
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
 }
 
 /* Add a gray background color and some padding to the footer */
 footer {
+<<<<<<< HEAD
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+=======
   background-color: #ccc;
   padding: 20px;
 }
@@ -184,3 +204,4 @@ hr {
   font-family: monospace;
   text-decoration: none;
 }
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531

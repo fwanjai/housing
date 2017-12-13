@@ -1,4 +1,9 @@
 /* Remove the navbar's default margin-bottom and rounded borders */
+<<<<<<< HEAD
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+=======
 body {
   background-color: white;
 }
@@ -32,12 +37,18 @@ hr {
 .navbar-toggle .icon-bar {
   background-color: blue;
   z-index: 2;
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
 }
 
 /* Add a gray background color and some padding to the footer */
 footer {
+<<<<<<< HEAD
+  background-color: #f2f2f2;
+  padding: 25px;
+=======
   background-color: #ccc;
   padding: 20px;
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
 }
 
 .carousel-inner img {
@@ -75,10 +86,16 @@ input[type=text]:focus {
 
 /* Style the links inside the sidenav */
 #mySidenav a {
+<<<<<<< HEAD
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+=======
     position: fixed; /* Position them relative to the browser window */
     left: -80px; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
     margin-top: 15%;
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
     padding: 15px; /* 15px padding */
     width: 100px; /* Set a specific width */
     text-decoration: none; /* Remove underline */
@@ -86,7 +103,10 @@ input[type=text]:focus {
     color: white; /* White text color */
     border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
     float: left;
+<<<<<<< HEAD
+=======
     z-index: 2;
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
 }
 
 #mySidenav a:hover {
@@ -113,6 +133,8 @@ input[type=text]:focus {
     top: 200px;
     background-color: #555 /* Light Black */
 }
+<<<<<<< HEAD
+=======
 .breadcrumbs {
   font-size: 13px;
   font-family: serif;
@@ -184,3 +206,4 @@ hr {
   font-family: monospace;
   text-decoration: none;
 }
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531

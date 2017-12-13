@@ -24,6 +24,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+<<<<<<< HEAD
+=======
 function checkScroll() {
   var startY = $('.navbar').height() * 2; //THe point where the nav-bar changes in pixel
 
@@ -57,3 +59,4 @@ function checkScroll() {
           }
       }
   }
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531

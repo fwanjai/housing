@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+=======
 /* Remove the navbar's default margin-bottom and rounded borders */
 body {
   background-color: white;
@@ -61,6 +65,7 @@ footer {
     width: 100%; /* Full width */
     padding: 20px; /* Some padding */
 }
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
 
 input[type=text] {
     width: 130px;
@@ -72,6 +77,8 @@ input[type=text] {
 input[type=text]:focus {
     width: 100%;
 }
+<<<<<<< HEAD
+=======
 
 /* Style the links inside the sidenav */
 #mySidenav a {
@@ -218,3 +225,4 @@ hr {
 #myUL li a:hover:not(.header) {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
+>>>>>>> 25813955f0fd62785b7e320a28a4f274dbd5e531
